@@ -1,0 +1,109 @@
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1d1d1f;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 히어로 섹션 (첫 화면) */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #fbfbfb 0%, #ffffff 100%);
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #86868b;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+    word-break: keep-all;
+}
+
+.highlight {
+    color: #0066cc; /* 전문적이고 신뢰감 있는 블루 톤 */
+}
+
+.description {
+    font-size: 20px;
+    color: #424245;
+    margin-bottom: 40px;
+    word-break: keep-all;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: #1d1d1f;
+    margin: 0 auto 40px;
+}
+
+.manifesto {
+    font-size: 17px;
+    color: #86868b;
+    margin-bottom: 48px;
+    word-break: keep-all;
+}
+
+/* 버튼 스타일 */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background-color: #1d1d1f;
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background-color: #424245;
+}
+
+/* 모바일 반응형 처리 */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 32px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .manifesto {
+        font-size: 15px;
+    }
+}
